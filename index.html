@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#101310">
+    <meta name="description" content="Nikitha P K — Software Engineer and Python Django Full Stack Developer.">
+      <meta
+        name="description"
+        content="Explore Nikitha's portfolio featuring Python, Django REST Framework, web development projects, computer vision, and achievements including the Retracing Wheelchair project."
+    >
+
+    <meta name="author" content="Nikitha">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nikitha | Python Django Developer Portfolio">
+    <meta
+        property="og:description"
+        content="Explore my software development projects, technical skills, and achievements."
+    >
+
+    <title>Nikitha P K | Software Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">
+            Nikitha <span>P K</span><i></i>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch to light theme"
+            title="Switch theme"
+        >
+            <i data-lucide="sun" class="theme-sun"></i>
+            <i data-lucide="moon" class="theme-moon"></i>
+        </button>
+
+        <a href="resume.pdf" class="resume-button" download>
+            <span>↓</span> Download Resume
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navLinks">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+
+            <div class="hero-glow"></div>
+            <div class="hero-grid"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    SOFTWARE ENGINEER
+                </p>
+
+                <h1>
+                    Nikitha <span class="accent">P K</span>
+                </h1>
+
+                <h2>Python Django Full Stack Developer</h2>
+
+                <div class="lime-line"></div>
+
+                <p class="hero-description">
+                    Information Technology graduate and developer building
+                    practical web applications, REST APIs and AI-driven
+                    solutions. Currently undergoing Python Django Full Stack
+                    Development training at Luminar Technolab, with an
+                    interest in cybersecurity.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="button-primary">
+                        View My Work <span>↗</span>
+                    </a>
+
+                    <a href="#contact" class="button-secondary">
+                        Contact Me
+                    </a>
+                </div>
+
+                
+               <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nikitha-pk-61552b255/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/Nikitha1316"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                            <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.1c-3.1.68-3.75-1.32-3.75-1.32-.5-1.29-1.24-1.63-1.24-1.63-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.62 1.21 3.26.92.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.06 1.14a10.6 10.6 0 0 1 5.57 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.12 2.95.71.78 1.14 1.78 1.14 3 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.08v3.08c0 .3.2.65.76.54A11.1 11.1 0 0 0 12 .9z"/>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=nikithapk3%40gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Email me"
+                    >
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-visual" id="heroVisual">
+                <div class="image-vignette"></div>
+
+                <img
+                    class="workspace-image"
+                    src="./Cozy Midnight Coding Workspace.png"
+                    alt="Developer workstation with laptop and code"
+                    fetchpriority="high"
+                >
+
+                <div class="image-shade"></div>
+
+
+                <div class="image-caption">
+                    <span>01 / DEVELOPER JOURNEY</span>
+                    <span>LEARN. BUILD. IMPROVE.</span>
+                </div>
+            </div>
+
+            <div class="hero-bottom-line">
+                <span>BASED IN KOZHIKODE, KERALA</span>
+                <a href="#about">SCROLL TO EXPLORE ↓</a>
+            </div>
+
+        </section>
+        
+        <section class="about-section" id="about">
+            <div class="about-inner">
+
+                <p class="about-eyebrow">
+                    <span>02</span> — A LITTLE ABOUT ME
+                </p>
+
+                <h2 class="about-heading">
+                    Curious by nature.
+                    <span>Developer by practice.</span>
+                </h2>
+
+                <div class="about-content">
+                    <p class="about-lead">
+                        I'm Nikitha, an Information Technology graduate
+                        interested in building useful software and
+                        understanding how technology works beneath the surface.
+                    </p>
+
+                    <p class="about-description">
+                        My current focus is Python, Django and REST API
+                        development. Through projects involving computer
+                        vision and real-time detection, I've also explored
+                        AI-driven applications.I want to keep strengthening
+                        my software development skills on practical problems
+                        along with security.
+                    </p>
+                </div>
+
+                <div class="about-facts">
+                    <div class="about-fact">
+                        <span class="fact-number">01</span>
+                        <span class="fact-label">Based in</span>
+                        <strong>Kozhikode, Kerala</strong>
+                    </div>
+
+                    <div class="about-fact">
+                        <span class="fact-number">02</span>
+                        <span class="fact-label">Building with</span>
+                        <strong>Python · Django · DRF</strong>
+                    </div>
+
+                    <div class="about-fact">
+                        <span class="fact-number">03</span>
+                        <span class="fact-label">Exploring</span>
+                        <strong>Software & Security</strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="experience-section" id="experience">
+            <div class="experience-inner">
+
+                <p class="experience-eyebrow">
+                    <span>03</span> — THE JOURNEY SO FAR
+                </p>
+
+                <h2 class="experience-heading">
+                    Learning by
+                    <span>doing.</span>
+                </h2>
+
+                <div class="journey-block">
+                    <h3 class="journey-label">EXPERIENCE</h3>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-meta">
+                            <span>2026 — PRESENT</span>
+                            <span>TRAINING</span>
+                        </div>
+                        <h4>Python Django Full Stack Developer Trainee</h4>
+                        <p class="timeline-company">Luminar Technolab</p>
+                        <p class="timeline-description">
+                            Developing practical skills in Python, Django,
+                            REST APIs, database integration and full-stack
+                            application development.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-meta">
+                            <span>2025 — 2026</span>
+                            <span>INTERNSHIP</span>
+                        </div>
+                        <h4>Cybersecurity Intern</h4>
+                        <p class="timeline-company">BLEEP Education</p>
+                        <p class="timeline-description">
+                            Practical training in cybersecurity fundamentals, security tools and security analysis.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-meta">
+                            <span>2024 — 2025</span>
+                            <span>INTERNSHIP</span>
+                        </div>
+                        <h4>LP201 Praticum for Innovative Engineering Intern</h4>
+                        <p class="timeline-description">
+                            Implemented a retracing wheelchair.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-meta">
+                            <span>2023</span>
+                            <span>INTERNSHIP</span>
+                        </div>
+                        <h4>Python Intern</h4>
+                        <p class="timeline-company">Skill Vertex</p>
+                        <p class="timeline-description">
+                            Applied Python to practical problems and developed a Digital Library project.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="journey-block education-block">
+                    <h3 class="journey-label">EDUCATION</h3>
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+                        <div class="timeline-meta">
+                            <span>2022 — 2026</span>
+                            <span>DEGREE</span>
+                        </div>
+                        <h4>B.Tech in Information Technology</h4>
+                        <p class="timeline-company">
+                            Government Engineering College, Idukki
+                        </p>
+
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <div class="projects-inner">
+
+                <p class="projects-eyebrow">
+                    <span>04</span> — SELECTED WORK
+                </p>
+
+                <div class="projects-heading-row">
+                    <h2 class="projects-heading">
+                        Things I've
+                        <span>worked on.</span>
+                    </h2>
+
+                    <p class="projects-intro">
+                        A selection of projects where I've explored
+                        software development, computer vision and
+                        hardware-based problem solving.
+                    </p>
+                </div>
+
+                <article class="project-item">
+                    <div class="project-number">01</div>
+
+                    <div class="project-content">
+                        <p class="project-category">COMPUTER VISION · REAL-TIME DETECTION</p>
+                        <h3>Safe Vision</h3>
+
+                        <p class="project-description">
+                            A real-time violence detection and alert system
+                            designed to analyse CCTV footage, detect potential
+                            threats and generate alerts using computer vision.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>OpenCV</span>
+                            <span>YOLOv8</span>
+                            <span>R3D-18</span>
+                            <span>Firebase</span>
+                            <span>React Native</span>
+                        </div>
+                        <br>
+                        <a href="https://github.com/Nikitha1316/Safe-Vision-Violence-detection-and-prediction-" class="button-primary">
+                        View the project source code <span>↗</span>
+                    </a>
+
+                        <p class="project-note">
+                            <span>↳</span> AI-assisted surveillance and alerting <br>
+                        </p>
+                    </div>
+
+                    <!-- <div class="project-mark">SV<span>.</span></div> -->
+                </article>
+
+                <article class="project-item">
+                    <div class="project-number">02</div>
+
+                    <div class="project-content">
+                        <p class="project-category">AI · INTERVIEW INTEGRITY</p>
+                        <h3>Interview Integrity Guard</h3>
+
+                        <p class="project-description">
+                            An application exploring the use of AI and computer
+                            vision to support interview integrity monitoring.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>React Native</span>
+                            <span>Computer Vision</span>
+                            <span>AI</span>
+                        </div>
+
+                        <p class="project-note">
+                            <span>↳</span> Intelligent monitoring concept
+                        </p>
+                    </div>
+
+                    <!-- <div class="project-mark">IG<span>.</span></div> -->
+                </article>
+
+                <article class="project-item">
+                    <div class="project-number">03</div>
+
+                    <div class="project-content">
+                        <p class="project-category">IOT · EMBEDDED SYSTEMS</p>
+                        <h3>Retracing Wheelchair</h3>
+
+                        <p class="project-description">
+                            A hardware-based project using sensors and motor
+                            control components to explore wheelchair movement
+                            and obstacle-aware navigation.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>ESP32</span>
+                            <span>Ultrasonic Sensors</span>
+                            <span>IR Sensors</span>
+                            <span>Motor Driver</span>
+                        </div>
+
+                        <p class="project-note">
+                            <span>↳</span> Hardware and sensor integration
+                        </p>
+                    </div>
+
+                    <!-- <div class="project-mark">RW<span>.</span></div> -->
+                </article>
+
+                <div class="projects-footer">
+                    <span>BUILT THROUGH EXPERIMENTATION</span>
+                    <span>03 PROJECTS / AND STILL BUILDING</span>
+                </div>
+
+            </div>
+        </section>
+
+        
+    <section id="achievements" class="achievements-section">
+        <div class="section-heading">
+            <span class="section-label">RECOGNITION / 01</span>
+            <h2 class="projects-heading">
+                        Milestones
+                        <span>that matter.</span>
+                    </h2>
+            <p class="projects-intro">
+                       Recognition for innovation, teamwork, and turning ideas into reality.
+                    </p>
+        </div>
+
+        <div class="achievements-grid">
+            <article class="achievement-card featured-achievement">
+                <div class="achievement-top">
+                    <span class="achievement-number">01 / AWARD</span>
+                    <span class="achievement-icon">🏆</span>
+                </div>
+
+                <span class="achievement-rank">FIRST RUNNER-UP</span>
+
+                <h3>Retracing Wheelchair Project</h3>
+
+                <p class="achievement-organization">
+                    LEAP Programme · IIT Madras Incubation Cell
+                </p>
+
+                <p class="achievement-description">
+                    Recognized as First Runner-Up for the Retracing Wheelchair
+                    project through the LEAP programme at IIT Madras Incubation Cell.
+                </p>
+
+                <span class="achievement-type">PROJECT RECOGNITION</span>
+            </article>
+        </div>
+    </section>
+
+
+        <section class="skills-section" id="skills">
+            <div class="skills-inner">
+
+                <p class="skills-eyebrow">
+                    <span>05</span> — MY TOOLKIT
+                </p>
+
+                <h2 class="skills-heading">
+                    Tools of the
+                    <span>trade.</span>
+                </h2>
+
+                <p class="skills-intro">
+                    Technologies I've learned and used across my development
+                    training, projects and technical exploration.
+                </p>
+
+                <div class="skills-list">
+
+                    <article class="skill-group">
+                        <span class="skill-index">01</span>
+                        <div class="skill-info">
+                            <h3>Programming</h3>
+                            <p>Writing logic and working with data.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                            <span>C</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <span class="skill-index">02</span>
+                        <div class="skill-info">
+                            <h3>Backend Development</h3>
+                            <p>Building applications and REST APIs.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Django</span>
+                            <span>Django REST Framework</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <span class="skill-index">03</span>
+                        <div class="skill-info">
+                            <h3>Frontend & Mobile</h3>
+                            <p>Creating interfaces for digital products.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                            <span>React Native</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <span class="skill-index">04</span>
+                        <div class="skill-info">
+                            <h3>Databases</h3>
+                            <p>Managing data.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span>MySQL</span>
+                            <span>SQLite</span>
+                            <span>Firebase</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <span class="skill-index">05</span>
+                        <div class="skill-info">
+                            <h3>Dev Tools</h3>
+                            <p>Managing development workflows.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Postman</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-group">
+                        <span class="skill-index">06</span>
+                        <div class="skill-info">
+                            <h3>Security & AI</h3>
+                            <p>Exploring security tools and computer vision.</p>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Kali Linux</span>
+                            <span>Wireshark</span>
+                            <span>Burp Suite</span>
+                            <span>OpenCV</span>
+                            <span>YOLOv8</span>
+                            <span>R3D-18</span>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="skills-footnote">
+                    ALWAYS LEARNING. ALWAYS EXPERIMENTING.
+                </p>
+
+            </div>
+        </section>
+
+
+        <section class="contact-section" id="contact">
+            <div class="contact-inner">
+
+                <p class="contact-eyebrow">
+                    <span>06</span> — LET'S CONNECT
+                </p>
+
+                <h2 class="contact-heading">
+                    Have something
+                    <span>in mind?</span>
+                </h2>
+
+                <p class="contact-description">
+                    I'm interested in software development opportunities,
+                    meaningful projects and connecting with people who
+                    enjoy building useful things with technology.
+                </p>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikithapk3%40gmail.com"
+                class="contact-email">
+                    nikithapk3@gmail.com
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+             
+
+                <div class="contact-details">
+                    <div>
+                        <span class="contact-label">LOCATION</span>
+                        <p>Kozhikode, Kerala, India</p>
+                    </div>
+
+                    <div>
+                        <span class="contact-label">FOCUS</span>
+                        <p>Python · Django · Software Development</p>
+                    </div>
+
+                    <div>
+                        <span class="contact-label">ALSO EXPLORING</span>
+                        <p>Cybersecurity · Computer Vision</p>
+                    </div>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="https://github.com/Nikitha1316"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        GitHub <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/nikitha-pk-61552b255"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        LinkedIn <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikithapk3%40gmail.com">
+                        Email <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <a href="#home" class="footer-logo">
+                Nikitha <span>P K</span><i></i>
+            </a>
+
+            <p>Designed with intention. Built with curiosity.</p>
+
+            <a href="#home" class="back-to-top">
+                BACK TO TOP ↑
+            </a>
+
+            <span class="footer-copyright">
+                © <span id="currentYear"></span> NIKITHA P K
+            </span>
+        </footer>
+
+    </main>
+
+</body>
+</html>
